@@ -2,22 +2,22 @@
 
 This is the Bankist website, showcasing the features and capabilities of the Bankist application. The website is fully responsive and includes interactive elements.
 
-![Bankist App](/img/appbank.png)
+![Photo of site](/img/appbank.png)
 
 You can see the live website at this link: [Bankist website](https://bankist-buli.netlify.app/)
 
-## Features
+# Features
 
     Presentation of the Bankist application's functionality.
     Interactive elements such as sliders, form, and scrolling animations.
     Full responsiveness on different devices.
 
-## Used technologies
+# Used technologies
 
     HTML
     SCSS
     JavaScript
 
-## Author
+# Author
 
 This website is authored by **Buli**.
