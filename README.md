@@ -1,4 +1,4 @@
-## **Bankist Project
+## **Bankist Project**
 
 This is the Bankist website, showcasing the features and capabilities of the Bankist application. The website is fully responsive and includes interactive elements.
 
@@ -18,4 +18,4 @@ You can see the live website at this link: [Bankist website](https://bankist-bul
 
 # Author
 
-This website is authored by **Buli.
+This website is authored by **Buli**.
