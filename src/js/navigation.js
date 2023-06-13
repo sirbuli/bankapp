@@ -1,6 +1,8 @@
 const nav = document.querySelector('.nav');
+const navMobile = document.querySelector('.mobile__nav');
 const header = document.querySelector('.header');
 const allSections = document.querySelectorAll('.section');
+const btnNavEl = document.querySelector('.mobile__nav__btn');
 const navHeight = nav.getBoundingClientRect().height;
 
 const navigation = () => {
@@ -17,14 +19,24 @@ const navigation = () => {
     }
   };
 
+  btnNavEl.addEventListener('click', function () {
+    header.classList.toggle('nav__open');
+  });
   nav.addEventListener('mouseover', handleHover.bind(0.3));
   nav.addEventListener('mouseout', handleHover.bind(1));
+
+  if (link.classList.contains('nav__link'))
+    header.classList.toggle('nav__open');
+
+  const isMobile = window.matchMedia('(max-width: 576px)').matches;
+
+  const stickyNavElement = isMobile ? navMobile : nav;
 
   const stickyNav = function (entries) {
     const [entry] = entries;
 
-    if (!entry.isIntersecting) nav.classList.add('sticky');
-    else nav.classList.remove('sticky');
+    if (!entry.isIntersecting) stickyNavElement.classList.add('sticky');
+    else stickyNavElement.classList.remove('sticky');
   };
 
   const headerObserver = new IntersectionObserver(stickyNav, {

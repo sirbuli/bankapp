@@ -41,9 +41,37 @@ h4 {
   font-weight: 500;
 }
 
+/* MOBILE */
+
+.mobile__nav {
+  display: none;
+  width: 100%;
+
+  &__btn {
+    border: none;
+    background: none;
+    cursor: pointer;
+  }
+
+  &__icon {
+    height: 4.8rem;
+    width: 4.8rem;
+    color: #333;
+
+    &[name='close-outline'] {
+      display: none;
+    }
+  }
+
+  &__logo {
+    height: 4.5rem;
+    transition: all 0.3s;
+  }
+}
+
 /* GENERAL ELEMENTS */
 .section {
-  padding: 15rem 3rem;
+  padding: 10rem 3rem;
   border-top: 1px solid #ddd;
   transition: transform 1s, opacity 1s;
 

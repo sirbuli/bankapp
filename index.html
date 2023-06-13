@@ -10,7 +10,17 @@
       href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./src/sass/style.scss" />
+    <link rel="stylesheet" href="./src/scss/style.scss" />
+    <link rel="stylesheet" href="./src/scss/queries.scss" />
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
 
     <script type="module" src="./src/js/script.js"></script>
 
@@ -18,6 +28,22 @@
   </head>
   <body>
     <header class="header">
+      <nav class="mobile__nav">
+        <a class="mobile__nav__logo" href="#">
+          <img
+            src="img/logo.png"
+            alt="Bankist logo"
+            class="nav__logo"
+            id="logo"
+            designer="Buli"
+            data-version-number="3.0"
+        /></a>
+
+        <button class="mobile__nav__btn">
+          <ion-icon class="mobile__nav__icon" name="menu-outline"></ion-icon>
+          <ion-icon class="mobile__nav__icon" name="close-outline"></ion-icon>
+        </button>
+      </nav>
       <nav class="nav">
         <img
           src="img/logo.png"
@@ -27,6 +53,7 @@
           designer="Buli"
           data-version-number="3.0"
         />
+
         <ul class="nav__links">
           <li class="nav__item">
             <a class="nav__link" href="#section--1">Features</a>
